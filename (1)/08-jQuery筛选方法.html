@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="grand">
+        <div class="father">
+            <div class="son">儿子</div>
+        </div>
+        <div class="nav">
+            <p>我是p</p>
+            <div>
+                <p>我是p</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            // 1.父  parent()
+            console.log($('.son').parent()); // 返回的是最近一级的父级元素
+            // 2.子
+            // (1)亲儿子
+            $('.nav').children('p').css('color', 'red');
+            // (2)可以选里面所有的孩子 包括儿子和孙子
+            $('.nav').find('p').css('color', 'red');
+            // 3.兄      
+        })
+    </script>
+</body>
+
+</html>
