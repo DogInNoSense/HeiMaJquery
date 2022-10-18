@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function() {
+            // 1.鼠标经过左侧li
+            $('#left li').mouseover(function() {
+                // 2.得到当前小li的索引号
+                var index = $(this).index();
+                // // 3.右侧盒子相应索引号的图片显示出来
+                // $('#content div').eq(index).show();
+                // // 4.让其余图片隐藏起来
+                // $('#content div').eq(index).siblings().hide();
+                $('#content div').eq(index).show().siblings().hide();
+                $(this).css('background', 'pink').siblings().css('background', '');
+            });
+        });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+        
+        .wrapper {
+            margin-left: 300px;
+            margin-top: 200px;
+        }
+        
+        .wrapper #left {
+            float: left;
+        }
+        
+        .wrapper #left li {
+            list-style: none;
+            width: 50px;
+            height: 25px;
+            text-align: center;
+            border: 2px solid #e9d1d0;
+            border-bottom: 0;
+            line-height: 30px;
+            /* 背景渐变 */
+            background-image: linear-gradient(to top, #fcf1ed, #fbfdfb);
+        }
+        
+        .wrapper #left li:last-child {
+            border-bottom: 2px solid #e9d1d0;
+        }
+        
+        .wrapper #content {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .wrapper #content div {
+            display: none;
+        }
+        
+        .wrapper #content div:first-child {
+            display: block;
+        }
+        
+        .wrapper #content img {
+            height: 244px;
+            border: 1px solid #e9d1d0;
+            border-left: 0px;
+        }
+    </style>
+
+
+    <body>
+        <div class="wrapper">
+            <ul id="left">
+                <li><a href="#">女靴</a></li>
+                <li><a href="#">雪地靴</a></li>
+                <li><a href="#">冬裙</a></li>
+                <li><a href="#">呢大衣</a></li>
+                <li><a href="#">毛衣</a></li>
+                <li><a href="#">棉服</a></li>
+                <li><a href="#">女裤</a></li>
+                <li><a href="#">羽绒服</a></li>
+                <li><a href="#">牛仔裤</a></li>
+            </ul>
+            <div id='content'>
+                <div>
+                    <a href="#"><img src="imges/女靴.jpg" width="200" height="250" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imges/雪地靴.jpg" width="200" height="250" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imges/冬裙.jpg" width="200" height="250" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imges/呢大衣.jpg" width="200" height="250" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imges/毛衣.jpg" width="200" height="250" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imges/棉服.jpg" width="200" height="250" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imges/女裤.jpg" width="200" height="250" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imges/羽绒服.jpg" width="200" height="250" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imges/牛仔裤.jpg" width="200" height="250" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
