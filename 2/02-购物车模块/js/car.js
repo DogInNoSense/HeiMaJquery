@@ -25,11 +25,7 @@ $(function() {
         // console.log(p);
         var price = (p * n).toFixed(2);
         $(this).parents('.p-num').siblings('.p-sum').html('￥' + price);
-        // var p1 = $('.price-sum').html();
-        // p1 = p1.substr(5);
-        // var sum = p1 + p;
-        // $('.price-sum').text(sum);
-        // console.log(p1, sum);
+        getSum();
     });
     // 4.减号
     $('.decrement').click(function() {
@@ -45,6 +41,7 @@ $(function() {
         // console.log(p);
         var price = (p * n).toFixed(2);
         $(this).parents('.p-num').siblings('.p-sum').html('￥' + price);
+        getSum();
     });
 
     // 4.用户修改文本框的值 计算小计模块
@@ -55,6 +52,24 @@ $(function() {
         var p = $(this).parents('.p-num').siblings('.p-price').html();
         p = p.substr(1);
         $(this).parents('.p-num').siblings('.p-sum').html('￥' + (p * n).toFixed(2));
+        getSum();
     });
+    getSum();
+    // 5.所有商品总计模块(封装成一个函数)
+    function getSum() {
+        var count = 0; // 总件数
+        var money = 0; // 总价格
+        $('.itxt').each(function(i, ele) {
+            count += parseInt($(ele).val());
+        });
+        $('.amount-sum em').text(count);
+
+        $('.p-sum').each(function(i, ele) {
+            money += parseFloat($(ele).text().substr(1));
+        })
+        $('.price-sum em').text('￥' + money.toFixed(2));
+
+    }
+
 
 });
