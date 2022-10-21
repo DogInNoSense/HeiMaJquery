@@ -1,0 +1,281 @@
+.main {
+    height: 466px;
+    background-color: #fff
+}
+
+.main .focus {
+    position: relative;
+    float: left;
+    margin-left: 219px;
+    margin-top: 10px;
+    width: 720px;
+    height: 455px;
+    overflow: hidden;
+}
+
+.focus .arr_l,
+.arr_r {
+    display: none;
+    background-color: rgba(0, 0, 0, .3);
+    width: 30px;
+    border-radius: 0px 30px 30px 0px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.focus .arr_r {
+    left: 690px;
+    border-radius: 30px 0 0 30px;
+}
+
+.focus ol {
+    position: absolute;
+    left: 34px;
+    top: 412px;
+    z-index: 1;
+}
+
+.focus ol li {
+    float: left;
+    margin: 0 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.focus ul {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    float: left;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+    width: 720px;
+    height: 455px;
+}
+
+.focus ul li img {
+    width: 720px;
+    height: 455px;
+}
+
+.kong {
+    position: relative;
+    float: left;
+    width: 9px;
+    height: 465px;
+    background-color: #fff;
+}
+
+.main .newsflash {
+    position: relative;
+    float: left;
+    margin-top: 10px;
+    width: 250px;
+    height: 456px;
+    background-color: #fff;
+}
+
+.main .newsflash .news {
+    width: 250px;
+    height: 165px;
+    border: solid 2px #ccc;
+}
+
+.main .newsflash .news-hd {
+    padding-left: 15px;
+    height: 33px;
+    line-height: 33px;
+    border-bottom: dashed 2px #ccc;
+}
+
+.main .newsflash .news-bd ul {
+    margin-top: 9px;
+    margin-left: 21px;
+    line-height: 23px;
+}
+
+.lifeservice {
+    height: 209px;
+    margin-left: 2px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 64px;
+    height: 72px;
+    text-align: center;
+    border: solid 2px #ccc;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    margin-top: 9px;
+    width: 21px;
+    height: 26px;
+    background: url(../images/huafei.png);
+}
+
+.bargain {
+    margin-top: 5px;
+    height: 75px;
+    background: pink
+}
+
+.bargain .bd {
+    display: block;
+    width: 250px;
+    height: 75px;
+    background: url(../upload/bargain.png)
+}
+
+
+/* 今日推荐模块 */
+
+.recom {
+    margin-top: 10px;
+    height: 163px;
+}
+
+.recom .recom_hd {
+    float: left;
+    width: 200px;
+    height: 163px;
+}
+
+.recom .recom_bd ul li {
+    position: relative;
+    float: left;
+    height: 163px;
+    width: 250px;
+    line-height: 163px;
+}
+
+.recom .recom_bd ul li::after {
+    position: absolute;
+    left: 2px;
+    top: 8px;
+    content: '';
+    width: 1px;
+    height: 147px;
+    background-color: #ccc;
+    ;
+}
+
+
+/* 侧边导航栏 */
+
+.side_nav {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+}
+
+.side_nav ul li {
+    font-weight: 700;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: default;
+}
+
+.current {
+    color: #fff;
+    background-color: red;
+}
+
+
+/* floor制作 */
+
+.box_hd {
+    margin-top: 30px;
+    height: 27px;
+    border-bottom: solid 2px #c81623;
+    line-height: 25px;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.box_hd .tab_list ul {
+    float: right;
+}
+
+.box_hd .tab_list ul li {
+    float: left;
+}
+
+.box_hd .tab_list ul li a {
+    padding: 0 16px;
+}
+
+.box_bd {
+    height: 360px;
+}
+
+.box_bd .tab_content>ul>li {
+    float: left;
+    height: 360px;
+}
+
+.w209 {
+    width: 209px;
+    background-color: #f9f9f9;
+}
+
+.w209 ul li {
+    margin-left: 10px;
+    float: left;
+    height: 33px;
+    line-height: 31px;
+    border-bottom: solid 2px #ccc;
+}
+
+.w209 ul li a {
+    display: block;
+    text-align: center;
+    width: 86px;
+    height: 31px;
+}
+
+.w209 img {
+    margin-top: 20px;
+    height: 241px;
+}
+
+.w329 {
+    width: 329px;
+}
+
+.w220 {
+    width: 220px;
+}
+
+.w220 img {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.w221 {
+    width: 221px;
+}
+
+.w221 img {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
