@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?525f6l');
+    src: url('../fonts/icomoon.eot?525f6l#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?525f6l') format('truetype'), url('../fonts/icomoon.woff?525f6l') format('woff'), url('../fonts/icomoon.svg?525f6l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.miaosha em {
+    display: inline-block;
+    margin-right: 14px;
+    width: 1px;
+    height: 32px;
+    background-color: #b1191a;
+    vertical-align: middle;
+}
+
+.logo {
+    position: relative;
+}
+
+.miaosha {
+    position: absolute;
+    padding-left: 13px;
+    left: 181px;
+    top: 40px;
+}
+
+
+/* 导航栏制作  */
+
+.nav {
+    height: 47px;
+    background-color: #fff;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .width ul .big {
+    padding: 0 28px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.nav .width ul {
+    float: left;
+    margin-left: 10px;
+}
+
+.nav .width ul li {
+    float: left;
+    line-height: 45px;
+}
+
+.nav a {
+    font-size: 14px;
+    padding: 0 23px;
+}
+
+.nav ul li:last-child a::after {
+    content: '\e908';
+    font-family: 'icomoon';
+}
+
+
+/* section 产品详情页面的制作start */
+
+.shouji .bd {
+    margin-bottom: 281px;
+}
+
+.shouji .bd li {
+    float: left;
+    margin-right: 13px;
+    margin-top: 27px;
+}
+
+.shouji .bd li:nth-child(4n) {
+    margin-right: 0px;
+}

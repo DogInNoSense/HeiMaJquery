@@ -1,0 +1,172 @@
+.register {
+    height: 84px;
+}
+
+.register .width {
+    padding-top: 16px;
+    height: 84px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.right {
+    display: inline-block;
+    color: green;
+}
+
+.wrong {
+    display: inline-block;
+    color: red;
+}
+
+.zhuce {
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+}
+
+.zhuce .reg_hd {
+    padding: 0 64px 0 10px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #dddddd;
+    background-color: #ececec;
+}
+
+.zhuce .reg_hd em {
+    font-size: 18px;
+}
+
+.zhuce .reg_hd i {
+    float: right;
+    font-size: 14px;
+}
+
+.zhuce .reg_bd {
+    height: 480px;
+}
+
+.zhuce .reg_bd>ul {
+    margin-left: 306px;
+    margin-top: 54px;
+}
+
+.zhuce .reg_bd ul li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.zhuce .reg_bd ul li span .right_font {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/right.png) no-repeat;
+    vertical-align: middle;
+}
+
+.zhuce .reg_bd ul li span .wrong_font {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/矩形8.png) no-repeat;
+    vertical-align: middle;
+}
+
+.safe {
+    padding-left: 170px;
+}
+
+.safe .ruo,
+.zhong,
+.qiang {
+    display: inline-block;
+    width: 33px;
+    height: 14px;
+    color: #fff;
+    line-height: 14px;
+    text-align: center;
+}
+
+.ruo {
+    background-color: #e00900;
+}
+
+.zhong {
+    background-color: #39ba36;
+}
+
+.qiang {
+    background-color: #f99200;
+}
+
+.zhuce .reg_bd ul label {
+    display: inline-block;
+    width: 87px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.zhuce .reg_bd ul .inp {
+    padding: 0 5px;
+    width: 240px;
+    height: 36px;
+    border: 1px solid #999999;
+    outline: 0px;
+}
+
+.agree {
+    margin-left: 84px;
+    margin-top: 40px;
+    line-height: 14px;
+}
+
+.agree input {
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+
+.agree em a {
+    color: #01a0e9;
+}
+
+.achiv .btm {
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 200px;
+    height: 34px;
+    background-color: #ca111a;
+    border: none;
+    color: #fff;
+}
+
+.copyright {
+    height: 118px;
+    padding-top: 25px;
+    border-top: #dfdfdf;
+}
+
+.copyright ul {
+    margin: 0 auto;
+    width: 727px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.copyright ul li {
+    float: left;
+    height: 12px;
+}
+
+.copyright ul li:nth-child(2n) {
+    margin: 0 5px;
+    padding: 0;
+    width: 1px;
+    height: 12px;
+    background-color: #946694;
+}
+
+.copyright p {
+    width: 729px;
+    margin: 14px auto 0;
+    text-align: center;
+    font-size: 12px;
+}

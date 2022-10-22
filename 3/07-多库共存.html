@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        // $符号冲突问题
+        $(function() {
+            function $(ele) {
+                return document.querySelector(ele);
+            }
+            console.log($('div'));
+            // $.each();
+            var xyz = jQuery.noConflict();
+            console.log(xyz('span')); // 用户自定义
+
+        });
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <span></span>
+</body>
+
+</html>
