@@ -58,7 +58,7 @@ $(function() {
         var data = localStorage.getItem("todolist");
         if (data !== null) {
             // 本地存储里面的数据是字符串格式的 但是我们需要的是对象格式的
-            return JSON.parse(data);
+            return JSON.parse(data); // 转换为对象格式
         } else {
             return [];
         }
